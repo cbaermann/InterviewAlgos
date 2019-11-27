@@ -9,10 +9,12 @@ function maxChar(str) {
     //maps list of chars as well as frequency
     for(let char of str)
     {
+        //if exists then add to "counter"
         if(charMap[char] )
         {
             charMap[char]++;
         }
+        //if does not exist set to value of 1
         else{
             charMap[char]=1;
         }
@@ -22,7 +24,9 @@ function maxChar(str) {
     {
         if(charMap[char]>max)
         {
+            //set max to value
             max = charMap[char];
+            //max char set to key
             maxChar = char;
         }
     }
